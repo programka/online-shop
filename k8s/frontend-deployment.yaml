@@ -17,3 +17,6 @@ spec:
         image: programka/frontend:1.0
         ports:
         - containerPort: 80
+        env:
+        - name: BACKEND_API_URL
+          value: "http://backend-service/api"
